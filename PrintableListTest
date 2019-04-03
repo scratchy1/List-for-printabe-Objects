@@ -1,0 +1,27 @@
+public class PrintableListTest {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        
+            PrintableList liste1=new PrintableList();
+            Person p1=new Person("Geilomat");
+            liste1.addLast(p1);
+            Cat cat1=new Cat();
+            liste1.addLast(cat1);
+            Cat cat2=new Cat();
+            liste1.addLast(cat2);
+            Cat cat3=new Cat();
+            liste1.addLast(cat3);
+            Book book=new Book("Geilomat");
+            liste1.addLast(book);
+            Person p2=new Person("BisamRatte");
+            liste1.addLast(p2);
+            PrintableList.ListIterator iterator1=liste1.listIterator();
+            while (iterator1.hasNext()==true) {
+                Printable q=iterator1.next();
+                q.print();
+            }
+    }
+
+            
+}
