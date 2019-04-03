@@ -1,0 +1,21 @@
+public class Person implements Printable{
+    private String name; // Attribut
+    
+
+    Person(String name) { // Konstruktor
+        this.name = name;
+        
+    }
+
+    String getName() { // Methode
+        return name;
+    }
+
+    
+    public String toString() {//Überschreiben println
+        return "Person namens " + name;
+    } 
+    public void print() {
+        System.out.println(name);
+    }
+}
