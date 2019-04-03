@@ -1,0 +1,14 @@
+public class Book implements Printable{
+    private String title;
+    Book(String title) { // Konstruktor
+        this.title = title;
+        
+    }
+    public String toString() {//Überschreiben println
+        return "Buch namens " + title;
+    } 
+    public void print() {
+        System.out.println(title);
+    }
+    
+}
